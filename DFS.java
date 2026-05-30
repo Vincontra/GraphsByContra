@@ -16,6 +16,13 @@ public class DFS {
             adj.get(y).add(x);
         }
         // TC:DFS over the entire graph:O(V + E)
+        // for everynode we are eventually calling the degree
+        // that means in undirected graph
+        // O(V)+sum of degree=2*E
+        // so eventully O(V+E)
+
+        //SC: O(N)+O(N)+O(N)
+
         ArrayList<Integer>ans=new ArrayList<>();
         boolean arr[]=new boolean[V];
         int cnt=0; //connectedComponents
