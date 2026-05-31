@@ -17,6 +17,8 @@ public class NumberofProvinces {
 
                 }
             }
+            //TC:  O(N) for loop + O(V+2E) for dfs
+        // but overall O(N)
             int ans=0;
             boolean vis[]=new boolean[n];
             for(int i=0;i<n;i++){
