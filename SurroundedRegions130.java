@@ -20,7 +20,7 @@ public class SurroundedRegions130 {
                     q1.add(new Pair(m-1,j));
                 }
             }
-
+/////
             for(int i=1;i<m-1;i++){
                 if(arr[i][0]=='O'){
                     q1.add(new Pair(i,0));
