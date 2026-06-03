@@ -74,3 +74,54 @@ public class FindEventualSafeStates{
         }
     //}
 }
+//class Solution {
+//    public List<Integer> eventualSafeNodes(int[][] graph) {
+//        int V=graph.length;
+//        List<Integer>ans=new ArrayList<>();
+//        boolean check[]=new boolean[V];
+//        boolean vis[]=new boolean[V];
+//        boolean samepath[]=new boolean[V];
+//
+//        ArrayList<ArrayList<Integer>>adj=new ArrayList<>();
+//        for (int i=0;i<graph.length;i++){
+//            adj.add(new ArrayList<>());
+//        }
+//        for (int i=0;i<graph.length;i++){
+//            int arr[]=graph[i];
+//            for (int j=0;j<arr.length;j++){
+//                adj.get(i).add(graph[i][j]);
+//            }
+//        }
+//
+//        for(int i=0;i<V;i++){
+//            if(!vis[i]){
+//                dfs(i,adj,check,vis,samepath);
+//            }
+//        }
+//        for(int i=0;i<V;i++){
+//            if(check[i]){
+//                ans.add(i);
+//            }
+//        }
+//        return ans;
+//
+//    }
+//    public static boolean dfs(int node,ArrayList<ArrayList<Integer>>adj,boolean check[],boolean vis[],boolean samepath[]){
+//        vis[node]=true;
+//        samepath[node]=true;
+//        check[node]=false;
+//        for(int i:adj.get(node)){
+//            if(!vis[i]){
+//                if(dfs(i,adj,check,vis,samepath)){
+//                    return true;
+//                }
+//            }
+//            else if(samepath[i]){
+//                return true;
+//            }
+//        }
+//        samepath[node]=false;
+//        check[node]=true;
+//        return false;
+//    }
+//}
