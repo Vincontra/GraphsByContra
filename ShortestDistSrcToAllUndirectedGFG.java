@@ -42,7 +42,6 @@ public class ShortestDistSrcToAllUndirectedGFG
             public Pair(int v,int wt){
                 this.v=v;
                 this.wt=wt;
-
             }
         }
     }
