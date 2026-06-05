@@ -11,7 +11,7 @@ public class ShortestDistSrcToAllUndirectedGFG
                 int u=edges[i][0];
                 int v=edges[i][1];
                 adj.get(u).add(new Pair(v,1));
-                adj.get(v).add(new Pair(u,1));
+                adj.get(v).add(new Pair(u,1));  // i just forgot this as it is undirected so both way edges must be added
             }
             int arr[]=new int[V];
             for(int i=0;i<V;i++)arr[i]=Integer.MAX_VALUE;
