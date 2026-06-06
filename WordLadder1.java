@@ -37,7 +37,6 @@ public class WordLadder1 {
                             if(hs.contains(nw)){
                                 q1.add(new Pair(nw,lvl+1));
                                 hs.remove(nw);         // very imp to do this as it might recheck even though we have visited this one
-
                             }
                         }
                     }
@@ -45,7 +44,6 @@ public class WordLadder1 {
             }
             return 0;
         }
-
         static class Pair{
             String word;
             int lvl;
@@ -53,7 +51,6 @@ public class WordLadder1 {
                 this.word=w;
                 this.lvl=lvl;
             }
-
         }
     }
 }
