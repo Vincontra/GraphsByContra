@@ -44,7 +44,6 @@ public class DijikstraByPQ {
                 }
             }
         }
-
         return dist;
     }
     static class Pair implements Comparable<Pair>{
