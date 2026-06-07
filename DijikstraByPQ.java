@@ -60,3 +60,18 @@ public class DijikstraByPQ {
         }
     }
 }
+
+  // Why PQ and not Q, Intuition, Time Complexity Derivation ???
+
+// So basically even if we use Queue we still get the answer but it is like brute force it explore
+// more paths than PQ unncesserily
+// Using PQ min is always on top so each time gredily we chosse min always thus
+// all those paths which are irrelevant does not come into picture
+// That is why PQ and not Q
+
+// Derivation E*logV will write in notebook
+
+
+
+
+
