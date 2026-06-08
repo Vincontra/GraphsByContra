@@ -5,7 +5,6 @@ class Solutions {
     //dest n-,n-1
     // and clear path is only you can follow zero
     //
-
     int shortestPath(int[][] grid, int[] source, int[] destination) { // iska ek aur sol like same but hashmap and all krne ke jagah thoda easy one
         // although this one is good too
         if(grid[source[0]][source[1]]==0||grid[destination[0]][destination[1]]==0){
