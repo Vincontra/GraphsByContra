@@ -1,6 +1,6 @@
 // User function Template for Java
 import java.util.*;
-class Solution {
+class Solutions {
 
     int shortestPath(int[][] grid, int[] source, int[] destination) {
 
