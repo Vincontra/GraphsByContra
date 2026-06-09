@@ -1,6 +1,7 @@
 import java.util.*;
 public class MinimumMultiplicationstoreachEnd {
     //class Solution {
+    //2139. Minimum Moves to Reach Target Score Lc almost similar
         public int minSteps(int[] arr, int start, int end) {
             boolean vis[]=new boolean[1001];
             Queue<Pair>q1=new LinkedList<>();
