@@ -2,6 +2,18 @@ import java.util.*;
 public class CheapestFlightsWithinKStops {
         public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
 
+            // if you use Dijikstra here which i did i got wrong ans
+            // as we only care about the min dis
+            // but here we have to think about the no of k stops only along with dis as well
+            // like it might possible to reach dest in k stops but with larger value
+            // using dijikstra same might not be as we omit that larger cost path which may be have more stops
+            // which eventually stops us reaching the dest which might be possible via another route with larger cost but k stops
+
+            // So hence then I used Queue which check all possible neighbourns not like the chepest one as PriorityQueue Does
+            // other wise my logic is correct
+
+
+
             int dist[]=new int[n];
             for (int i=0;i<n;i++) {
                 dist[i]=Integer.MAX_VALUE;
