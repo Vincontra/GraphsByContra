@@ -1,8 +1,7 @@
 import java.util.PriorityQueue;
-
-public class PathWithMaxDiff {
-    class Solution {
-        public int minimumEffortPath(int[][] grid) {
+public class PathWithMaxDiff{
+    class Solution{
+        public int minimumEffortPath(int[][] grid){
             int n=grid.length;
             int m=grid[0].length;
             int dist[][]=new int[n][m];
