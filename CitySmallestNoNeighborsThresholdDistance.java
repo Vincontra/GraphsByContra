@@ -13,7 +13,6 @@ public class CitySmallestNoNeighborsThresholdDistance {
 
             }
         }
-
         for(int i=0;i<edges.length;i++){
             int u=edges[i][0];
             int v=edges[i][1];
@@ -21,7 +20,6 @@ public class CitySmallestNoNeighborsThresholdDistance {
             mat[u][v]=wt;
             mat[v][u]=wt;
         }
-
         for(int via=0;via<n;via++){
             for(int i=0;i<n;i++){
                 for(int j=0;j<n;j++){
@@ -31,7 +29,6 @@ public class CitySmallestNoNeighborsThresholdDistance {
                 }
             }
         }
-
 
         int ansNode=0;
         int MinCnt=Integer.MAX_VALUE;
@@ -45,13 +42,11 @@ public class CitySmallestNoNeighborsThresholdDistance {
             if(cnt<MinCnt){
                 MinCnt=cnt;
                 ansNode=i;
-
             }
             else if(cnt==MinCnt){
                 ansNode=Math.max(ansNode,i);
             }
         }
         return ansNode;
-
     }
 }
