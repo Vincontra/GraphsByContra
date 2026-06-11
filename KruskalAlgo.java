@@ -6,15 +6,15 @@ public class KruskalAlgo {
     static int kruskalsMST(int V, int[][] edges) {
         DisJoint ds=new DisJoint(V);
         List<Pair>edg=new ArrayList<>();
-        for(int i=0;i<edges.length;i++){
+        for(int i=0;i<edges.length;i++){   // O(M edges)
             int u=edges[i][0];
             int v=edges[i][1];
             int w=edges[i][2];
             edg.add(new Pair(u,v,w));
         }
-        Collections.sort(edg);
+        Collections.sort(edg);   // MlogM
         int ans=0;
-        for(int i=0;i<edg.size();i++){
+        for(int i=0;i<edg.size();i++){    // M*4Alpha*2   and space is O(M) for storing and all
             Pair curr=edg.get(i);
             int u=curr.u;
             int v=curr.v;
