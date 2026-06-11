@@ -46,7 +46,8 @@ public class BipartiteGraphBFS {
                     if(color[i]==-1){
                         color[i]=1-color[currnode];
                         q1.add(i);
-                    }else if(color[currnode]==color[i]){
+                    }
+                    else if(color[currnode]==color[i]){
                         return false;
                     }
                 }

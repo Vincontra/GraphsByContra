@@ -9,7 +9,7 @@ public class CycleInDirectedGraphDFS {
         // and still we are visiting again via another parent
         // but that is not true as since it is visited by some another parent
         // it may possible that the currNode do not have edge towards that par
-        // so even though it is visited we can to go to that parent since no edge as directed
+        // so even though it is visited we can  go to that parent since no edge as directed
         // this is true in undirected as we can move from both par to child and vice versa
         // That is why we use samepath boolean array to have track we are on same track
         //
